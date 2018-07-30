@@ -12,8 +12,7 @@ import {
     Input,
     LinearProgress,
     Select,
-    Radio,
-    AppBar
+    Radio
 } from '@material-ui/core';
 
 const Enum = (options) => ({__ty: 'Enum', options});
@@ -51,14 +50,11 @@ Input.pdResizable = ['width'];
 LinearProgress.pdPropControls = {value: 'Number', valueBuffer: 'Number', color: Enum(['primary', 'secondary']), variant: Enum(['determinate', 'indeterminate', 'buffer', 'query'])};
 LinearProgress.pdResizable = ['width'];
 
-Select.pdPropControls = {value: 'Text', open: 'Boolean', displayEmpty: 'Boolean', children: 'Text'};
-Select.pdResizable = ['width'];
+/*Select.pdPropControls = {value: 'Text', open: 'Boolean', displayEmpty: 'Boolean', children: 'Text'};
+Select.pdResizable = ['width']; Bugs the store for now */
 
 Radio.pdPropControls = {color: colorTy, disabled: 'Boolean', disableRipple: 'Boolean', checked: 'Boolean'}
 Radio.pdResizable = []
-
-AppBar.pdPropControls = {color: colorTy, position: Enum(['fixed', 'absolute', 'sticky', 'static']), children: 'Text'};
-AppBar.pdResizable = ['height', 'width'];
 
 export default {
     Button,
@@ -69,7 +65,5 @@ export default {
     CircularProgress,
     Input,
     LinearProgress,
-    Select,
-    Radio,
-    AppBar
+    Radio
 };
