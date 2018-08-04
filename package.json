@@ -1,6 +1,6 @@
 {
   "name": "pd-material",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "src/pagedraw-specs.js",
   "dependencies": {
     "@material-ui/core": "^1.4.1",
